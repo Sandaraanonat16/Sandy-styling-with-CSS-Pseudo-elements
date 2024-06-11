@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: pink;
+    text-align:center;
+}
+.main-header {
+    font-size: 50px;
+    color: purple;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: cursive;
+}
+
+.intro-paragraph {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: times new roman;
+}
+
+.cta-button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    text-align:center;
+}
+
+.main-header::before,
+.main-header::after {
+    content: '✨️';
+    color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+}
+.main-header::before {
+    left: -30px;
+}
+.main-header::after {
+    right: -30px;
+}
+
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '"';
+    color: black;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+.intro-paragraph::before {
+    left: -20px;
+}
+.intro-paragraph::after {
+    right: -20px;
+}
+.cta-button::before,
+.cta-button::after {
+    content: '><';
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: red;
+}
+.cta-button::before {
+    left: -25px;
+}
+.cta-button::after {
+    right: -25px;
+}
+
+    
